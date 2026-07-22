@@ -1,8 +1,12 @@
 tasks = []
 
 print("Welcome to Todo App!")
-task = input("Enter a task: ")
-tasks.append(task)
+
+for i in range(3):
+    task = input("Enter a task: ")
+    tasks.append(task)
 
 print("Your tasks:")
-print(tasks)
+for index, task in enumerate(tasks, start=1):
+    print(f"{index}. {task}")
+    
